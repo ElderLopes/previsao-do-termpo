@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">    <script src="script.js"></script>
+    <title>Previsao do tempo</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <input placeholder="Digite o nome da cidade">
+
+        <button onclick="clickButton()">
+            <img class="img-button" alt="Buscar" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="container2">
+            <h2>Tempo em ...</h2>
+
+            <p id="temp"> °C</p>
+
+            <p>Temperatura máxima: <span id="temp-max"> °C</span></p>
+            <p>Temperatura mínima: <span id="temp-min"> °C</span></p>
+            <p>Velocidade do vento: <span id="wind-speed">  km/h</span></p>
+            <p>Probabilidade de chuva: <span id="rain-prob"> %</span></p>
+
+
+            <div class="container3">
+                <img id="img-icon" src="https://openweathermap.org/img/wn/04n.png" alt=" icone-info-tempo">
+                <p id="prev"> </p>
+            </div>
+
+            <p id="umid">Umidade: %</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
